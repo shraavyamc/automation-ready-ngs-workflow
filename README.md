@@ -1,1 +1,0 @@
-# automation-ready-ngs-workflow
