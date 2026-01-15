@@ -1,0 +1,6 @@
+sample_id,concentration_ng_ul,qc_status
+S1,18.5,PASS
+S2,22.1,PASS
+S3,9.8,Low concentration
+S4,15.0,PASS
+S5,12.3,PASS

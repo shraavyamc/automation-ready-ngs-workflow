@@ -1,0 +1,20 @@
+workflow:
+  - step_id: sample_normalisation
+    input_plate: sample_plate
+    output_plate: normalised_plate
+    target_concentration_ng_ul: 10
+    final_volume_ul: 20
+    qc_check: concentration_check
+
+  - step_id: enzymatic_reaction
+    input_plate: normalised_plate
+    incubation:
+      temperature_c: 20
+      time_min: 15
+    qc_check: reagent_addition_complete
+
+  - step_id: cleanup_and_transfer
+    input_plate: reaction_plate
+    output_plate: final_library_plate
+    qc_check: volume_recovery
+
